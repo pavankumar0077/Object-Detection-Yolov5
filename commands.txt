@@ -1,11 +1,11 @@
-cd yolov5
- ls
-/home/idrbt/anaconda3/envs/yolov5custom/bin/python3 -m pip install -r requirements.txt
- /home/idrbt/anaconda3/envs/yolov5custom/bin/python3 -m pip3 install -r requirements.txt
-/home/idrbt/anaconda3/envs/yolov5custom/bin/python3 -m pip install -r requirements.txt
-pip install -r requirements.txt 
- ls
- which python3
+
+# Activate conda env called labelImg to labelImg annotation tool
+conda env list
+conda activate labelImg 
+
+- After acitvation type: labelImg
+
+# Acitvate conda env called yolov5custom 
 
 # TO RUN THE MODEL
 /home/idrbt/anaconda3/envs/yolov5custom/bin/python3 train.py --img 640 --batch 16 --epochs 100 --data custom_data.yaml --weights yolov5s.pt --nosave --cache
